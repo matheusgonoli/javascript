@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Exemplo_05:
+
+        Crie um programa que programa que solicite um valor entre 1 a 10, imprima na pagina a tabuada de multiplicação.
+
+        5 X 0 = 0
+        5 X 1 = 5 
+        5 X 2 = 10
+        
+        */
+
+        let numero = parseInt(prompt("digite um valor:"));
+        console.log(numero)
+
+        for(contador = 0; contador <= 10; contador++){
+            console.log(numero + 'X' + contador + '=' , numero * contador);
+            document.write( numero + 'X' + contador + '=' , numero * contador + '<br>' );
+        }
+
+    </script>
+</body>
+</html>
