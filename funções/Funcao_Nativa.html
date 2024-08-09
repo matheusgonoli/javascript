@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+      
+       Funções nativas em JavaScript
+      
+       Uma função nativa em JavaScript é uma função incorporada que já está disponível na linguagem JavaScript sem a necessidade de criar ou importar qualquer biblioteca adicional.
+        
+       Essas funções são parte do núcleo da linguagem e podem ser usadas diretamente em seu código sem a necessidade de defini-las previamente.
+      
+       */
+
+        let texto = 'Aula javascript';
+        let texto2 = '        Aula javascript     ';
+        // |A|u|l|a| |j|a|v|a|s|c |r |i |p |t |
+        // |0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|  
+
+        console.log(texto.length); // cumprimento de uma string
+
+        console.log(texto.charAt(5)); // mostra qual caracter esta na possição que foi a 5 gerando o J
+
+        console.log(texto.indexOf('r')); // mostra em que possição está o caracter da letra R que foi o 11
+
+        console.log(texto.replace('javascript', 'culinaria')); // ele substitui a 1° palavra pela segunda após a virgula
+
+        console.log(texto.substring(5, 10)); //  ele mostra o indice incial que foi 5 e quantos blocos ele deve começar a partir do indice escolhido que foi 10
+
+        console.log(texto.toUpperCase()); // irá converter para maiusculo
+
+        console.log(texto.toLowerCase()); // irá converter para minusculos
+
+        console.log(texto.toLocaleUpperCase()); // vai puxar pela gramatica da região
+
+        console.log(texto2.trim()); // irá remover os espaços do inicio e do final do string
+
+        let numero = 10.35978;
+        console.log(numero);
+        console.log(Math.ceil(numero));//arredonda um valor para cima
+        console.log(Math.floor(numero));// arredonda para baixo
+
+        console.log(Math.round(10.5));//arredonda para cima (11) conformea regra da aritmética
+        console.log(Math.round(10.4));//arredonda para baixo (10) conformea regra da aritmética
+
+        //---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        let numeroAleatorio = Math.random();
+        console.log(numeroAleatorio);
+        console.log(Math.round(numeroAleatorio));
+        
+        let numeroAleatorio2 = Math.random() * 10;
+        numeroAleatorio2 = Math.round(numeroAleatorio2);
+        console.log('Aleatorio entre 0 e 10: ' + numeroAleatorio2);
+        //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        let data = new Date();
+        console.log(data);
+        console.log("Dia semana: " + data.getDate());
+        console.log("Dia no mes: " + data.getDate());
+        console.log("Mes: " + data.getMonth());
+        console.log("Mes: " + (data.getMonth() +1));// 
+
+        console.log("Ano: " + data.getFullYear());
+
+
+
+    </script>
+</body>
+
+</html>
