@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac</title>
+</head>
+<body>
+
+    <script>
+
+    function acao(){
+        let div = document.getElementById("lampada").src="lampadas/ligada.pgn";
+        
+    }
+
+    function acao2(){
+        let div = document.getElementById("lampada").src="lampadas/desligada.pgn";
+       
+    }
+
+    </script>
+
+    <h3> Ligas/Desligar a lâmpada </h3>
+
+    <img id="lampada" src="lampadas/ligada.png">
+    <br>
+    
+    <input onclick="acao()" type="radio" name="lampada">ligar
+    <br>
+
+    <input onclick="acao2()" type="radio" name="lampadaDesligada">Desligar
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <style>
+        h1, p {
+            color: rgb(0, 0, 0); /* Cor azul para o texto */
+        }
+    </style>
+</head>
+<body>
+    <h1>Atividade</h1>
+    <p id="informacoes"></p> <!-- Parágrafo para exibir as informações -->
+
+    <script>
+        // Solicita os dados do usuário
+        const nome = prompt("Digite seu nome:");
+        const sobrenome = prompt("Digite seu sobrenome:");
+        const email = prompt("Digite seu e-mail:");
+
+        // Formata as informações a serem exibidas
+        const informacoes = `<font color=blue><b>Nome:</b></font> ${nome}<br><font color=blue><b>Sobrenome:</b></font> ${sobrenome}<br><font color=blue><b>E-mail:</b></font> ${email}`;
+
+        // Exibe as informações na página
+        document.getElementById('informacoes').innerHTML = informacoes;
+
+        // Exibe as informações no console
+        console.log("Nome:", nome);
+        console.log("Sobrenome:", sobrenome);
+        console.log("E-mail:", email);
+    </script>
+</body>
+</html>

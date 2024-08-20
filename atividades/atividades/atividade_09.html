@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let idade = parseFloat(prompt("Digite seu idade:"));
+
+        if (idade <= 12) {
+            console.log('idade criança');
+
+            document.write("<table border='1' > <tr bgcolor='blue'> <td align = 'center'> Classificação Etária </td> </tr>");
+            document.write("<tr> <td align = 'righ'> Idade: </td> <td> " + idade + " </td> </tr>");
+            document.write("<tr> <td align = 'righ'> Classicação: </td> <td> Criança </td> </tr> </table>");
+
+        } else if (idade < 18) {
+            console.log('adolecente');
+
+            document.write("<table border='1' > <tr bgcolor='blue'> <td align = 'center'> Classificação Etária </td> </tr>");
+            document.write("<tr> <td align = 'righ'> Idade: </td> <td> " + idade + " </td> </tr>");
+            document.write("<tr> <td> Classicação: </td> <td> Adolecente </td> </tr> </table>");
+
+        } else if (idade >= 18) {
+            console.log('adulto');
+            
+            document.write("<table border='1' > <tr bgcolor='blue'> <td align = 'center'> Classificação Etária </td> </tr>");
+            document.write("<tr> <td align = 'righ'> Idade: </td> <td> " + idade + " </td> </tr>");
+            document.write("<tr> <td align = 'righ'> Classicação: </td> <td> Adulto </td> </tr> </table>");
+
+        }
+
+    </script>
+</body>
+
+</html>

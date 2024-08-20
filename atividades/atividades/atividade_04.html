@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac</title>
+</head>
+<body>
+
+    <script>
+        let nome = prompt('Qual seu nome?');
+        console.log(nome);
+
+        let portugues = parseFloat(prompt('Digite a nota de Português: '));
+        console.log(portugues);
+    
+        let matematica = parseFloat(prompt('Digite a nota de Matemática: '));
+        console.log(matematica);
+
+        let ciencia = parseFloat(prompt('Digite a nota de Ciências: '));
+        console.log(ciencia);
+
+        let media = ((portugues + matematica + ciencia ) /3);
+
+        document.write('<font color=blue> Boletim Escolar </font>');
+
+        document.write('<b><br> Nome:  </b>' + nome );
+
+        document.write('<b><br> Português:  </b>' + portugues );
+
+        document.write('<b><br> Matemática: </b>' + matematica );
+
+        document.write('<b><br> Ciências: </b>' + ciencia );
+
+        document.write('<b><br>Media:</b>' + media);
+
+    </script>
+</body>
+</html>

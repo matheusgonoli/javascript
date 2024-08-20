@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let data = new Date();
+        let dia = data.getDate();
+        let mes = data.getMonth() +1;
+        let ano = data.getFullYear();
+
+        if(dia < 10){dia = "0" + dia};
+        if(mes < 10){mes = "0" + mes}; 
+
+        let dataComplate = dia + "/" + mes + "/" + ano;
+
+        console.log(dataComplate);
+
+        document.write("<h1>" + dataComplate + "</h1>");
+
+
+
+    </script>
+</body>
+</html>
